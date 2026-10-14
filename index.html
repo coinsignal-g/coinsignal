@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Find active crypto projects, understand token activity, and cut through market noise with transparent, evidence-based signals.">
+  <meta property="og:title" content="CoinSignal — Find active projects. Filter the noise.">
+  <meta property="og:description" content="A clearer way to explore token activity across crypto.">
+  <meta property="og:type" content="website">
+  <title>CoinSignal — Find active projects. Filter the noise.</title>
+  <style>
+    :root{--bg:#090d18;--panel:#111827;--panel2:#0d1422;--line:#263247;--text:#f4f7fb;--muted:#9aa8bc;--green:#9af5c5;--cyan:#86e7ff;--amber:#ffd48a;--red:#ff9b9b;--radius:20px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#183044 0,transparent 36%),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff10}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.5px;font-size:20px}.logo{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--green),var(--cyan));display:grid;place-items:center;color:#07111b;font-weight:900}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}.navright{display:flex;align-items:center;gap:12px}.pill{border:1px solid var(--line);border-radius:999px;padding:9px 14px;color:var(--muted);font-size:12px}.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,filter .15s}.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}.btn-primary{background:var(--green);color:#07131a}.btn-ghost{background:#ffffff08;color:var(--text);border:1px solid var(--line)}.hero{padding:78px 0 54px;display:grid;grid-template-columns:1.04fr .96fr;gap:52px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--green);font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px #9af5c5}.hero h1{font-size:clamp(43px,6vw,72px);line-height:.99;letter-spacing:-3.8px;margin:22px 0 22px;max-width:680px}.hero h1 span{color:var(--green)}.hero p{font-size:17px;color:var(--muted);max-width:550px;margin:0 0 26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.micro{margin-top:16px;color:#73839a;font-size:12px}.dashboard{border:1px solid #34435a;background:linear-gradient(160deg,#111c2c,#0b111e 75%);border-radius:24px;padding:18px;box-shadow:0 28px 90px #0007;position:relative;overflow:hidden}.dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.dash-title{font-weight:800}.demo-tag{font-size:10px;letter-spacing:.7px;color:var(--amber);border:1px solid #6e5732;border-radius:6px;padding:4px 7px}.dash-sub{color:var(--muted);font-size:12px;margin-top:3px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#ffffff05;border:1px solid #263349;border-radius:13px;padding:13px}.stat small{color:var(--muted);font-size:11px}.stat strong{display:block;font-size:22px;margin-top:5px;letter-spacing:-.5px}.positive{color:var(--green)}.negative{color:var(--red)}.tokenlist{margin-top:18px;border:1px solid #263349;border-radius:14px;overflow:hidden}.tokenrow{display:grid;grid-template-columns:1.45fr .8fr .8fr;gap:8px;align-items:center;padding:12px 13px;border-bottom:1px solid #ffffff0b;font-size:12px}.tokenrow:last-child{border-bottom:0}.tokenrow.head{background:#ffffff05;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.8px}.tokenname{display:flex;align-items:center;gap:9px;font-weight:700}.coinicon{width:29px;height:29px;display:grid;place-items:center;border-radius:10px;background:#1d3340;color:var(--cyan);font-weight:900}.tokenname small{display:block;color:var(--muted);font-weight:400;font-size:10px}.signal{font-size:10px;border-radius:6px;padding:5px 7px;display:inline-block;white-space:nowrap}.sig-up{color:var(--green);background:#9af5c514}.sig-low{color:var(--amber);background:#ffd48a12}.sig-cool{color:var(--red);background:#ff9b9b12}.chart{height:46px;margin-top:15px;display:flex;align-items:end;gap:5px;padding:0 3px}.chart i{display:block;flex:1;border-radius:4px 4px 1px 1px;background:linear-gradient(180deg,#9af5c5,#4a9f9b);opacity:.85}.chart i:nth-child(3n){background:linear-gradient(180deg,#86e7ff,#397aa6)}.chart-label{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:7px}.trustline{border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12;padding:18px 0;color:#718198;font-size:12px}.trust-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.trust-inner span{display:flex;align-items:center;gap:8px}.section{padding:82px 0}.section-kicker{font-size:11px;color:var(--green);font-weight:800;letter-spacing:1.7px;text-transform:uppercase}.section h2{font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-1.7px;margin:13px 0 14px}.section-intro{max-width:650px;color:var(--muted);font-size:16px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}.feature{background:linear-gradient(145deg,#121c2c,#0d1320);border:1px solid var(--line);border-radius:var(--radius);padding:24px;min-height:214px}.feature-icon{width:42px;height:42px;border-radius:13px;background:#9af5c512;border:1px solid #9af5c528;display:grid;place-items:center;color:var(--green);font-size:20px}.feature h3{font-size:18px;margin:18px 0 7px}.feature p{color:var(--muted);font-size:14px;margin:0}.how{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:start}.steps{display:grid;gap:12px}.step{display:flex;gap:16px;padding:18px;border:1px solid var(--line);border-radius:15px;background:#ffffff04}.num{width:32px;height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:10px;background:#9af5c515;color:var(--green);font-weight:800}.step h3{font-size:15px;margin:1px 0 5px}.step p{color:var(--muted);font-size:13px;margin:0}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:27px}.principle{border-top:1px solid var(--line);padding-top:15px}.principle strong{display:block;margin-bottom:5px}.principle p{font-size:13px;color:var(--muted);margin:0}.cta{border:1px solid #3b5a59;border-radius:24px;background:radial-gradient(ellipse at 90% 10%,#24443f 0,transparent 42%),linear-gradient(120deg,#111d2b,#0d1522);padding:40px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.cta h2{font-size:clamp(28px,4vw,40px);margin:0 0 10px}.cta p{color:var(--muted);margin:0;max-width:650px}.signup{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.signup input{min-width:0;width:min(310px,100%);background:#070d17;border:1px solid #35455a;border-radius:11px;padding:12px 14px;color:var(--text);outline:none}.signup input:focus{border-color:var(--green)}.formnote{font-size:11px;color:#75869b;margin-top:9px}.toast{display:none;margin-top:10px;font-size:13px;color:var(--green)}footer{padding:30px 0 38px;margin-top:60px;border-top:1px solid #ffffff12;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footbrand{color:var(--text);font-weight:800}.disclaimer{max-width:760px;margin-top:17px;color:#728097;font-size:11px}.mobile-menu{display:none}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:32px;padding-top:58px}.hero h1{letter-spacing:-2.6px}.dashboard{max-width:650px}.feature-grid{grid-template-columns:repeat(2,1fr)}.how{grid-template-columns:1fr;gap:25px}.cta{grid-template-columns:1fr}.navlinks{gap:15px}}
+    @media(max-width:580px){.wrap{width:min(100% - 28px,1160px)}.nav{height:66px}.navlinks{display:none}.pill{display:none}.hero{padding:48px 0 40px}.hero h1{font-size:47px}.hero p{font-size:15px}.dashboard{padding:12px;border-radius:18px}.stats{gap:6px}.stat{padding:10px}.stat strong{font-size:18px}.tokenrow{grid-template-columns:1.25fr .75fr .85fr;padding:10px 8px;font-size:10px}.tokenname{gap:6px}.coinicon{width:25px;height:25px}.signal{font-size:9px;padding:4px}.section{padding:58px 0}.feature-grid{grid-template-columns:1fr}.feature{min-height:0;padding:20px}.principles{grid-template-columns:1fr}.cta{padding:25px 20px}.signup{display:grid;grid-template-columns:1fr}.signup input{width:100%}.btn{width:100%}.trust-inner{gap:10px}.trust-inner span{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#" aria-label="CoinSignal home"><span class="logo">C</span> CoinSignal</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#features">Features</a><a href="#how">How it works</a><a href="#principles">Our principles</a>
+    </nav>
+    <div class="navright"><span class="pill">EARLY ACCESS</span><a class="btn btn-primary" href="#join">Join the waitlist ↗</a></div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Crypto research, with less noise</div>
+        <h1>Find active projects.<br><span>Filter the noise.</span></h1>
+        <p>Crypto moves fast. CoinSignal helps you explore token activity, spot meaningful changes, and understand the evidence behind every signal — across chains.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#join">Get early access <span>→</span></a>
+          <a class="btn btn-ghost" href="#features">Explore the product ↓</a>
+        </div>
+        <div class="micro">No wallet connection required · Built for independent research</div>
+      </div>
+      <div class="dashboard" aria-label="Illustrative product dashboard">
+        <div class="dash-head">
+          <div><div class="dash-title">Activity Radar</div><div class="dash-sub">A clearer view of on-chain changes</div></div>
+          <span class="demo-tag">ILLUSTRATIVE DEMO</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><small>Tracked projects</small><strong>1,284</strong></div>
+          <div class="stat"><small>Activity rising</small><strong class="positive">+18.6%</strong></div>
+          <div class="stat"><small>Signals today</small><strong>42</strong></div>
+        </div>
+        <div class="tokenlist">
+          <div class="tokenrow head"><span>Project</span><span>Activity</span><span>Signal</span></div>
+          <div class="tokenrow"><span class="tokenname"><span class="coinicon">N</span><span>Nova<small>Ethereum</small></span></span><span class="positive">↑ Rising</span><span><b class="signal sig-up">Gaining</b></span></div>
+          <div class="tokenrow"><span class="tokenname"><span class="coinicon">S</span><span>Solara<small>Solana</small></span></span><span>→ Steady</span><span><b class="signal sig-up">Active</b></span></div>
+          <div class="tokenrow"><span class="tokenname"><span class="coinicon">B</span><span>Bytecat<small>Base</small></span></span><span class="negative">↓ Cooling</span><span><b class="signal sig-cool">Cooling</b></span></div>
+          <div class="tokenrow"><span class="tokenname"><span class="coinicon">O</span><span>Orbit<small>Arbitrum</small></span></span><span>— Limited</span><span><b class="signal sig-low">Low data</b></span></div>
+        </div>
+        <div class="chart" aria-hidden="true"><i style="height:30%"></i><i style="height:42%"></i><i style="height:35%"></i><i style="height:55%"></i><i style="height:49%"></i><i style="height:68%"></i><i style="height:53%"></i><i style="height:76%"></i><i style="height:62%"></i><i style="height:90%"></i><i style="height:73%"></i><i style="height:100%"></i><i style="height:81%"></i><i style="height:95%"></i><i style="height:70%"></i><i style="height:88%"></i></div>
+        <div class="chart-label"><span>Earlier</span><span>Recent activity · illustrative</span></div>
+      </div>
+    </section>
+
+    <div class="trustline"><div class="wrap trust-inner"><span>⌁ Multi-chain by design</span><span>◈ Evidence before labels</span><span>↗ Built for retail traders</span><span>◎ No wallet connection required</span></div></div>
+
+    <section class="wrap section" id="features">
+      <div class="section-kicker">The signal, not the noise</div>
+      <h2>Know what changed.<br>See why it matters.</h2>
+      <p class="section-intro">CoinSignal is designed to go beyond a list of prices. It brings activity, liquidity context, and transparent evidence into one research workflow.</p>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon">⌕</div><h3>Token Search</h3><p>Search by project name, ticker, chain, or contract address. Identify the exact asset before you research it.</p></article>
+        <article class="feature"><div class="feature-icon">⌁</div><h3>Activity Radar</h3><p>Explore projects with rising, steady, or cooling on-chain activity across supported networks.</p></article>
+        <article class="feature"><div class="feature-icon">⚑</div><h3>Risk Signals</h3><p>See evidence-based flags such as sharp liquidity changes or concentrated ownership — with context.</p></article>
+        <article class="feature"><div class="feature-icon">◷</div><h3>Project Timeline</h3><p>Review how activity and public project signals change over time, with source links and timestamps.</p></article>
+        <article class="feature"><div class="feature-icon">☆</div><h3>Personal Watchlist</h3><p>Keep your research in one place and follow changes in the projects you care about.</p></article>
+        <article class="feature"><div class="feature-icon">↗</div><h3>Transparent Evidence</h3><p>Understand what a signal means, where the data came from, and what it cannot tell you.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="how">
+      <div class="how">
+        <div><div class="section-kicker">Simple by design</div><h2>From token overload to a clearer shortlist.</h2><p class="section-intro">The goal isn't to tell you what to buy. It's to help you ask better questions, faster.</p>
+          <div class="principles" id="principles">
+            <div class="principle"><strong>Evidence first</strong><p>Every signal should have a source and a timestamp.</p></div>
+            <div class="principle"><strong>No paid rankings</strong><p>Commercial relationships must never buy a better score.</p></div>
+            <div class="principle"><strong>Context matters</strong><p>High activity does not mean a token is safe.</p></div>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="num">01</div><div><h3>Find a token</h3><p>Search by its contract address or discover projects by activity and chain.</p></div></div>
+          <div class="step"><div class="num">02</div><div><h3>Review the evidence</h3><p>Compare transactions, liquidity, holder distribution, and available project signals.</p></div></div>
+          <div class="step"><div class="num">03</div><div><h3>Track what changes</h3><p>Follow a watchlist and review meaningful changes instead of chasing every chart.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="join">
+      <div class="cta">
+        <div>
+          <div class="section-kicker">Help shape the product</div>
+          <h2>Be part of a clearer crypto market.</h2>
+          <p>We're building for traders who want better research, not more hype. Join the early-access list or share the product with a trader who should help shape it.</p>
+          <form class="signup" id="waitlistForm">
+            <input id="email" type="email" placeholder="Your email address" aria-label="Your email address" required>
+            <button class="btn btn-primary" type="submit">Request early access ↗</button>
+          </form>
+          <div class="formnote">Prototype only: this form does not send or store your email yet. Connect a form service before launch.</div>
+          <div class="toast" id="toast" role="status">Thanks for your interest. The waitlist isn't connected yet — please add a real signup service before publishing.</div>
+        </div>
+        <a class="btn btn-ghost" href="https://x.com/" target="_blank" rel="noopener">Follow the journey on X ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot"><a class="brand" href="#"><span class="logo">C</span> CoinSignal</a><span>Find active projects. Filter the noise.</span><span>© <span id="year"></span> CoinSignal · Early concept</span></div>
+    <p class="disclaimer">CoinSignal is an independent research concept, not financial advice. Activity and risk indicators are informational, can be incomplete or delayed, and do not guarantee project quality, token safety, or future price performance. All dashboard figures shown here are illustrative demo data, not live market data.</p>
+  </div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('waitlistForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('toast').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
